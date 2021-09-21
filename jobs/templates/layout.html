@@ -1,0 +1,17 @@
+<!-- templates/layout.html -->
+<!doctype html>
+<html>
+    <link rel="stylesheet" href="{{ url_for(filename=static\css\bulma.css) }}" />
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+  <head>
+    <title>Job Board</title>
+  </head>
+  <body>
+    <div class="container top">
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
